@@ -24,9 +24,9 @@
 	</scm>
     
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>org.gearman.jgs</groupId>
+	<groupId>imolko</groupId>
 	<artifactId>java-gearman-service</artifactId>
-	<version>0.7.0-SNAPSHOT</version>
+	<version>0.7.0</version>
 	<packaging>jar</packaging>
 	
 	<licenses>
