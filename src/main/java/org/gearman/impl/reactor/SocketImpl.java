@@ -234,17 +234,17 @@ final class SocketImpl<A> implements Socket<A>, CompletionHandler<Integer, Objec
 			try {
 				this.socketChannel.shutdownOutput();
 			} catch (IOException ex) {
-				LOGGER.info("Failed to close connection", ex);
+				LOGGER.warn("Failed to close connection", ex);
 			}
 			try {
 				this.socketChannel.shutdownInput();
 			} catch (IOException ex) {
-				LOGGER.info("Failed to close connection", ex);
+				LOGGER.warn("Failed to close connection", ex);
 			}
 			try {
 				this.socketChannel.close();
 			} catch (IOException ex) {
-				LOGGER.info("Failed to close connection", ex);
+				LOGGER.warn("Failed to close connection", ex);
 			}
 		} catch (Throwable th) {
 			LOGGER.warn("Unexspected Exception", th);
